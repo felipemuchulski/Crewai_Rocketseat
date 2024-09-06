@@ -1,0 +1,11 @@
+# Instalação das libs
+#removido crewai-tools
+yfinance==0.2.41
+crewai==0.28.8
+langchain==0.1.0
+langchain-openai==0.1.7
+duckduckgo-search langchain-community==0.0.38
+duckduckgo-search==5.3.0
+
+# Adicionar biblioteca para funcinar dentro do streamlit cloud
+pysqlite3-binary
