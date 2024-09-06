@@ -7,7 +7,6 @@ langchain-openai==0.1.7
 duckduckgo-search
 duckduckgo-search
 streamlit
-crewai==0.28.8
---upgrade crewai
+crewai>=0.28.8
 # Adicionar biblioteca para funcinar dentro do streamlit cloud
 pysqlite3-binary
