@@ -21,13 +21,13 @@ def install(package):
 # install("langchain-core>=0.2.27,<0.3.0")
 
 # # Install other packages
-install("yfinance==0.2.41")
-install("crewai==0.28.8")
-install("crewai[tools]")
-install("langchain==0.1.0")           # This might be redundant after the upgrade
-install("langchain-openai==0.1.7")
-install("duckduckgo-search")
-install("streamlit") 
+# install("yfinance==0.2.41")
+# install("crewai==0.28.8")
+# install("crewai[tools]")
+# install("langchain==0.1.0")           # This might be redundant after the upgrade
+# install("langchain-openai==0.1.7")
+# install("duckduckgo-search")
+# install("streamlit") 
 #Import das LIBS
 import json
 import os

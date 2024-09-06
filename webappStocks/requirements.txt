@@ -3,8 +3,11 @@
 yfinance==0.2.41
 langchain-community>=0.2.10,<0.3.0
 langchain-core>=0.2.27,<0.3.0
+langchain-openai==0.1.7
+duckduckgo-search
 duckduckgo-search
 streamlit
 crewai==0.28.8
+--upgrade crewai
 # Adicionar biblioteca para funcinar dentro do streamlit cloud
 pysqlite3-binary
