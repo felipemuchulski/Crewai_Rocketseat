@@ -40,7 +40,6 @@ from langchain.tools import Tool
 from langchain_openai import ChatOpenAI
 from langchain_community.tools import DuckDuckGoSearchResults
 
-from IPython.display import Markdown
 import streamlit as st #Como construir uma aplicação web rapida e facil
 
 
@@ -180,12 +179,12 @@ if submit_button:
             raw = valor.__dict__.get('raw', '')
 
             #Markdown
-            summary_markdown = Markdown(str(summary))
-            raw_markdown = Markdown(str(raw))
+            summary_markdown = st.markdown(str(summary))
+            raw_markdown = st.markdown(str(raw))
             combined_info = f"{summary}\n{raw}"
 
 
-            Markdown(combined_info)
+            st.markdown(combined_info)
 
         st.subheader("Results of your research:")
         st.write(combined_info)
