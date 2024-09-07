@@ -1,33 +1,9 @@
-#Instalação das libs
-# pip install yfinance==0.2.41
-# pip install crewai==0.28.8
-# pip install "crewai[tools]"
-# pip install --upgrade crewai
-# pip install langchain==0.1.0
-# pip install langchain-openai==0.1.7
-# pip install -qU duckduckgo-search langchain-community==0.0.38
-# pip install -U duckduckgo-search==5.3.0
-# pip install streamlit
 import subprocess
 import sys
 
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", package])  # Added --upgrade
 
-# ... (rest of your import statements)
-
-# Upgrade langchain-community and langchain-core
-# install("langchain-community>=0.2.10,<0.3.0")
-# install("langchain-core>=0.2.27,<0.3.0")
-
-# # Install other packages
-# install("yfinance==0.2.41")
-# install("crewai==0.28.8")
-# install("crewai[tools]")
-# install("langchain==0.1.0")           # This might be redundant after the upgrade
-# install("langchain-openai==0.1.7")
-# install("duckduckgo-search")
-# install("streamlit") 
 #Import das LIBS
 import json
 import os
@@ -53,12 +29,6 @@ yahoo_finance_tool = Tool(
     description = "Fetches stock prices for {ticket} from the last year using Yahoo Finance API.",
     func = lambda ticket: fetch_stock_price(ticket)
 )
-    
-
-# Teste de execução
-# response = yahoo_finance_tool.run("AAPL")
-# print(response)
-
 
 # Importar LLM
 os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
